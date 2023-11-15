@@ -1,0 +1,19 @@
+<svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Facebook">
+<g id="Combined Shape" filter="url(#filter0_d_3558_24)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M38 0C21.4315 0 8 13.4315 8 30C8 46.5685 21.4315 60 38 60C54.5685 60 68 46.5685 68 30C68 13.4315 54.5685 0 38 0ZM40.1269 30.3178V46.6393H33.3738V30.3184H30V24.6939H33.3738V21.317C33.3738 16.7285 35.2789 14 40.6915 14H45.1976V19.6251H42.381C40.274 19.6251 40.1346 20.4112 40.1346 21.8781L40.1269 24.6933H45.2295L44.6324 30.3178H40.1269Z" fill="white"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_3558_24" x="0" y="0" width="76" height="76" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3558_24"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3558_24" result="shape"/>
+</filter>
+</defs>
+</svg>
