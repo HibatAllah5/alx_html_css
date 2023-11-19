@@ -10,9 +10,8 @@ body header {
     padding: 2px;
     height: 60px;
 }    
-header ul {
-    justify-content: middle;
- }
+
+
  header ul li a { 
     color:blanchedalmond;
     font-family:'poppins';
