@@ -1,0 +1,2 @@
+#Asalamo Alaikom everyone, so in this the first project of this week, we need to workon FLEXBOX.
+So we need to creat an image of an already styled document; we have created seven index.html files with their own styles.css files, each step has it's own html and css files.
