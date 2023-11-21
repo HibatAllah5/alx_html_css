@@ -79,7 +79,6 @@ header .nav-wrapper{
 /* - Navbar Menu - */
 nav .nav-container .nav-tabs {
     float: right;
-    list-style: none;
 }
 .nav-container ul li {
     display: inline;
@@ -104,7 +103,7 @@ nav .nav-container .nav-tabs {
 /* - Section Hero1 - */
 .section-hero1 {
     position: relative;
-    background: url('media/headphones_hero_1.jpg') center/cover no-repeat;
+    background: url('images/headphones_hero_1.jpg') center/cover no-repeat;
     height: var(--hero1-section-height);
 }
 
@@ -214,7 +213,7 @@ nav .nav-container .nav-tabs {
 /* - Our Results Section - */
 
 .our-results-section {
-    background: url('media/headphones_hero_2.jpg') center/cover no-repeat;
+    background: url('images/headphones_hero_2.jpg') center/cover no-repeat;
     padding: 2rem 2rem;
 }
 
@@ -377,8 +376,8 @@ nav .nav-container .nav-tabs {
     padding-top: 2rem;
 }
 
-/* ===== END FOOTER ===== */
 
+/* ===== END FOOTER ===== */
 
 @media screen and (max-width: 480px) {
     
