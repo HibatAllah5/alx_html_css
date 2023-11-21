@@ -290,7 +290,7 @@ nav .nav-container .nav-tabs {
 .contact-us-container h1 {
     color: var(--color-primary);
     font-size: var(--font-size-x-large);
-    text-align:center;
+    text-align: center;
     margin-bottom: 2rem;
 }
 #contactForm{
@@ -321,7 +321,7 @@ nav .nav-container .nav-tabs {
 
 .contact-us-btn {
     background-color: var(--color-primary);
-    color: var(--color-primary);
+    color: var(--color-white);
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-bold);
     width: 10rem;
