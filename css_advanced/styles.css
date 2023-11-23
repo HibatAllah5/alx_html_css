@@ -1,7 +1,7 @@
 :root {
     --color-white: white;
     --color-puple: #C271FF;
-    --color-dark: #C271FF;
+    --color-dark:#000000;
     --font-family-base:'Source Sans Pro';
 
 }
@@ -15,7 +15,7 @@ html{
     height: 100%;
 }
 body {
-    background: url("./images/Object.png") center/cover no-repeat;
+    background: url("IMAGES/CSS\ Advanced/Object.png") center/cover no-repeat;
     background-position-y: 0%;
 }
 .banner {
@@ -37,6 +37,7 @@ button:hover {
     cursor: pointer;
     opacity: .9;
 }
+
 
 /* ============== HEADER ============ */
 header {
@@ -64,7 +65,7 @@ header .navbar a:hover {
 /* ============== END HEADER ============ */
 
 
-/* ============== SECTION1 ============ */
+/* ============== SECTION 1 ============ */
 .section .title {
     display: flex;
     flex-direction: column;
@@ -113,10 +114,10 @@ header .navbar a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 150px;
+    gap: 145px;
 }
 .banner .users img {
-    width: 150px;
+    width: 140px;
     height: 150px;
     border-radius: 100%;
     margin-bottom: 10px;
@@ -124,7 +125,7 @@ header .navbar a:hover {
 .banner .users div h3 {
     color: #FFF;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 800;
     line-height: 27px; 
 }
 .banner .users div p {
@@ -132,11 +133,11 @@ header .navbar a:hover {
     font-size: 16px;
     font-style: italic;
     font-weight: 100;
-    line-height: 24px;
+    line-height: 23px;
 }
-/* ============== END SECTION 1 ============ */
+/* ============== END Section 1 ============ */
 
-/* ============== SECTION 2 ============ */
+/* ============== Section 2 ============ */
 .quotes {
     padding: 100px;
     background: #C271FF;
@@ -148,6 +149,7 @@ header .navbar a:hover {
     gap: 50px;
 }
 .quotes #content{
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,6 +162,7 @@ header .navbar a:hover {
     line-height: 33.6px;
     margin-bottom:30px ;
 }
+
 .quotes .q div q+p {
     color: #FFF;
     font-size: 22px;
@@ -173,46 +176,55 @@ header .navbar a:hover {
     font-weight: 400;
     line-height: 33.6px;
 }
-/* ============== END SECTION2 ============ */
+/* ============== END Section 2 ============ */
 
-/* ============== SECTION3 ============ */
+/* ============== Section 3 ============ */
 .videos-list {
     padding: 100px;
     background: #fff;
 }
-.videos-list h1 {
-    color: #C271FF;
+.videos-list h2 {
+    color:#000000;
     font-size: 32px;
     font-weight: 300;
     margin-bottom: 60px;
+    display:flex;
+    justify-content: center;
+    gap: 7px;
 }
-.videos-list h1 span {
+
+.videos-list h2 span {
     color: #C271FF;
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 300;
+   
 }
 .videos-list .videos {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 0px;
+    size: 0px;
 }
 .video {
     text-align: start;
+    
 }
-.video h2 {
+.video h4 {
     color: #071629;
     font-size: 16px;
     font-weight: 700;
     margin: 10px 0px;
 }
-.video h2+p {
+.video h4+p {
     color: rgba(7, 22, 41, 0.50);
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 10px;
+
 }
+
 .video .ph {
     display: flex;
     align-items: center;
@@ -220,42 +232,42 @@ header .navbar a:hover {
     margin-bottom: 10px;
     color: #C271FF;
 }
-.ph img {
-    width: 30px;
-    height: 30px;
+.p img {
+    width: 20px;
+    height: 20px;
 }
-.ph h3 {
+.p h4 {
     color: #C271FF;
     font-size: 14px;
     font-weight: 600;
     line-height: 27px;
 }
-.video .rate {
+.video .rating {
     display: flex;
     align-items: center;
     gap: 100px;
     color: #C271FF;
 }
-.rate p {
+.rating p {
     color: #C271FF;
     font-size: 14px;
     font-weight: 600;
     line-height: 27px;
 }
-/* ============== END SECTION3 ============ */
+/* ============== END SECTION 3 ============ */
 
-/* ============== SECTION4 ============ */
+/* ============== Section 4 ============ */
 .membership{
     padding-top: 100px;
     padding-bottom: 50px;
     background: #071629;
 }
-.membership h1 {
+.membership h2 {
     color: #FFF;
     font-size: 32px;
     font-weight: 300;
 }
-.membership h1 span {
+.membership h2 span {
     color: #C271FF;
     font-size: 32px;
     font-weight: 700;
@@ -280,7 +292,7 @@ header .navbar a:hover {
     padding: 10px;
     box-shadow: 4px 4px 4px black;
 }
-#smiles h2 {
+#smiles h3 {
     color: #FFF;
     font-size: 18px;
     font-weight: 600;
@@ -294,15 +306,15 @@ header .navbar a:hover {
     line-height: 26px;
     margin-top: 10px;
 }
-/* ============== END SECTION4 ============ */
+/* ============== END section 4 ============ */
 
-/* ============== SECTION5 ============ */
+/* ============== Section 5 ============ */
 .FAQ {
     padding-top: 100px;
     padding-bottom: 50px;
     background: #fff;
 }
-.FAQ h1 {
+.FAQ h2 {
     color: #071629;
     font-size: 60px;
     font-weight: 300;
@@ -316,7 +328,7 @@ header .navbar a:hover {
     gap: 250px;
     margin-bottom: 100px;
 }
-.faq h2 {
+.faq h3 {
     color: #071629;
     font-size: 16px;
     font-weight: 700;
@@ -328,21 +340,21 @@ header .navbar a:hover {
     font-weight: 400;
     line-height: 24px;
 }
-/* ============== END SECTION4 ============ */
+/* ============== END section 4 ============ */
 
-/* ============== FOOTER ============ */
-.foot {
+/* ============== Footer ============ */
+.footer {
     padding-top: 100px;
     padding-bottom: 30px;
     background: #071629;
 }
-.foot div {
+.footer div {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 50px;
 }
-.foot p {
+.footer p {
     color: #FFF;
     font-size: 12px;
     font-weight: 400;
