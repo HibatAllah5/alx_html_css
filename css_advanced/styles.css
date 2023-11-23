@@ -1,23 +1,41 @@
 :root {
+        /* COLORS var */
     --color-white: white;
-    --color-puple: #C271FF;
+    --color-purple: #C271FF;
     --color-dark:#000000;
-    --font-family-base:'Source Sans Pro';
+    --color-text:#07152780;
+        /* FONT var */
+        --font-family-base:'Source Sans Pro';
+        --font-size-2x-small: 0.75rem;
+        --font-size-x-small: 0.875rem;
+        --font-size-small: 1rem;
+        --font-size-meduim: 1.125rem;
+        --font-size-large: 1.37rem;
+        --font-size-x-large: 2rem;
+        --font-size-xx-large: 3.75rem;
+        --font-size-3x-large: 7.5rem;
+        --font-weight-small: 300;
+        --font-weight-meduim: 400;
+        --font-weight-large: 700;
 
 }
+    /* = BASED = */
 * {
     font-family: var(--font-family-base);
     margin: 0;
     padding: 0;
 }
+   /* = END BASED = */
 
 html{
     height: 100%;
 }
 body {
     background: url("IMAGES/CSS\ Advanced/Object.png") center/cover no-repeat;
-    background-position-y: 0%;
+    background-position-y:0;
+    
 }
+
 .banner {
     align-items: center;
     text-align: center;
@@ -65,7 +83,9 @@ header .navbar a:hover {
 /* ============== END HEADER ============ */
 
 
-/* ============== SECTION 1 ============ */
+
+
+/* ============== MAIN ============ */
 .section .title {
     display: flex;
     flex-direction: column;
@@ -76,13 +96,13 @@ header .navbar a:hover {
 
 .banner div h1 {
     color: #FFF;
-    font-size: 8rem;
+    font-size: 120px;
     font-weight: 700;
 }
 .banner div h1+p {
     word-spacing: 60px;
     color: var(--color-white);
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 700;
     margin-bottom: 50px;
 }
@@ -103,18 +123,25 @@ header .navbar a:hover {
     color: #C271FF;
     font-size: 32px;
     font-weight: 700;
+    line-height: 40.22px;
+    top: 631px;
+    left: 604px;
 }
 .banner div h2 {
     color: #FFF;
     font-size: 32px;
     font-weight: 300;
     margin-bottom: 80px;
+    top: 631px;
+    left: 604px;
 }
 .banner .users {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 145px;
+    height: 237px;
+    gap: 130px;
+
 }
 .banner .users img {
     width: 140px;
@@ -146,13 +173,19 @@ header .navbar a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap:50px;
 }
+.quote .a{
+    width: 160px;
+    height: 160px;
+
+}
+
 .quotes #content{
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: start;
 }
 .quotes .q div q {
@@ -181,10 +214,10 @@ header .navbar a:hover {
 /* ============== Section 3 ============ */
 .videos-list {
     padding: 100px;
-    background: #fff;
+    background:var( --color-white);
 }
 .videos-list h2 {
-    color:#000000;
+    color:var(--color-dark);
     font-size: 32px;
     font-weight: 300;
     margin-bottom: 60px;
@@ -194,27 +227,34 @@ header .navbar a:hover {
 }
 
 .videos-list h2 span {
-    color: #C271FF;
+    color: var(--color-purple);
     font-size: 32px;
     font-weight: 300;
    
 }
-.videos-list .videos {
+.videos {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0px;
-    size: 0px;
+    gap: 50px;
+    
 }
 .video {
     text-align: start;
     
 }
+.video a{
+    width: 255px;
+    height: 154px;
+    border-radius: 5px, 5px, 0px, 0px;
+}
+
 .video h4 {
     color: #071629;
     font-size: 16px;
     font-weight: 700;
     margin: 10px 0px;
+    line-height: 20.11px;
 }
 .video h4+p {
     color: rgba(7, 22, 41, 0.50);
@@ -230,11 +270,11 @@ header .navbar a:hover {
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
-    color: #C271FF;
+    color: #C271;
 }
 .p img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 .p h4 {
     color: #C271FF;
