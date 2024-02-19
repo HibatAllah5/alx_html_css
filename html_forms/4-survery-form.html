@@ -1,0 +1,51 @@
+<form action="#">
+    <label for="name" required=""> Name: </label>
+    <input type="text" name="name" id="name"><br>
+    <label for="email" required> Email: </label>
+    <input type="email" name="email" id="email"><br><br>
+
+    <label for="lang" required="">Favourite color :</label>
+    <select name="Favourite-Color" id="lang">
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+    </select><br><br>
+
+    <label for="time" required> Time: </label>
+    <input type="time"><br><br>
+
+    <label for="date"> Date: </label>
+    <input type="date"><br><br>
+
+    <input type="submit" value="Submit" />
+</form>
+<style>
+    select{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-family: sans-serif;
+        background-color:lightgrey;
+        color:black;
+        padding: 4px;
+        border-radius: 9px;
+    }
+    label {
+        display:contents;
+        align-items: center;
+        justify-content: center;
+    }
+    input{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    body{
+        display: flex;
+        color: beige;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: auto;
+        background-color:steelblue;
+    }
+</style>
