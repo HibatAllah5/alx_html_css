@@ -1,0 +1,26 @@
+<form action="/my-handling-form-page" method="post">
+    <ul>
+      <li>
+        <label for="name">Name:</label>
+        <input 
+         type="text"
+         id="name"
+         name="name"
+         required/>
+      </li>
+      <li>
+        <label for="emailAdress">Email:</label><br />
+        <input
+         type="email"
+         id="emailAdress" 
+         placeholder="user@example.com"
+         required/>
+      </li>
+      <li>
+        <label for="subscription">Subscription</label><br />
+        <input type="radio" name="monthly" value="monthly" required>Monthly<br>
+        <input type="radio" name="yearly" value="yearly" required>Yearly<br>
+      </li>
+      <button>Submit</button>
+    </ul>
+  </form>
