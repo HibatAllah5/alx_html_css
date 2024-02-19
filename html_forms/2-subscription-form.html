@@ -1,26 +1,56 @@
-<form action="/my-handling-form-page" method="post">
+<form>
+  <fieldset>
     <ul>
       <li>
-        <label for="name">Name:</label>
+        <label for="name">Name:*</label><br>
         <input 
          type="text"
          id="name"
          name="name"
          required/>
-      </li>
+      </li></br>
       <li>
-        <label for="emailAdress">Email:</label><br />
+        <label for="emailAdress">Email*:</label><br>
         <input
          type="email"
          id="emailAdress" 
          placeholder="user@example.com"
          required/>
-      </li>
+      </li><br>
+      <!-- While only one radio button in a same-named group can be selected at a time, 
+        and therefore only one radio button in a same-named group having the "required" attribute
+         suffices in making a selection a requirement -->
+
       <li>
-        <label for="subscription">Subscription</label><br />
-        <input type="radio" name="monthly" value="monthly" required>Monthly<br>
-        <input type="radio" name="yearly" value="yearly" required>Yearly<br>
-      </li>
+        <label for="subscription">Subscription:</label>
+        <input type="radio" required name="monthly" id="r1" value="monthly" /><label
+        for="r1"
+        >Monthly</label><br>
+      <input type="radio" required name="yearly" id="r2" value="yearly" /><label
+        for="r2"
+        >Yearly</label><br>
+      </li><br>
       <button>Submit</button>
     </ul>
-  </form>
+  </fieldset>
+  <style>
+      form {
+        font: 1em sans-serif;
+         max-width: 500px;
+      }
+
+      label {
+        display: block;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="radio"],
+      textarea,
+      fieldset {
+        width: 100%;
+        border: 1px solid #333;
+        box-sizing: border-box;
+      }
+   </style>
+</form>

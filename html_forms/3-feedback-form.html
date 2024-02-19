@@ -1,0 +1,38 @@
+<div id="sample">
+    <h2>Feedback Form</h2>
+    <p>Please complete the information below and click Submit .</p>
+    <form id="my-form" method="post">
+    <div id="align">
+    <input type="hidden" name="required" value="name,phone,email" />
+    <input type="hidden" name="title" value="Thank you for contacting our company" />
+    <input type="hidden" name="return_link_url" value="https://www.example.com/index.shtml" />
+    <input type="hidden" name="return_link_title" value="Go to the Homepage" />
+    <label for="name1">NAME:</label><br />
+    <span><input type="text" name="name" id="name1" class="data-entry" /></span><br /><br />
+    <label for="email">E-MAIL ADDRESS:</label><br />
+    <span><input type="email" name="email" id="email" class="data-entry" /></span><br /><br />
+    We would like to know your feedback:<br />
+    <span style="white-space:nowrap; display:inline-block;line-height:2em;">
+    <input type="checkbox" name="type" value="desktop" /> Excellent </span>
+    <span style="white-space:nowrap; display:inline-block">
+    <input type="checkbox" name="type" value="notebook" /> Good </span>
+    <span style="white-space:nowrap; display:inline-block">
+    <input type="checkbox" name="type" value="netbook" /> Average </span>
+    <span style="white-space:nowrap; display:inline-block">
+    <input type="checkbox" name="type" value="server" /> Poor </span><br>
+    <input type="file"><br> <br/>
+    <span><input class="button" type="reset" value="RESET" /><br>
+    <input type="button" class="button" value="SUBMIT" onclick="window.alert ('This is a sample form only');" /></span><br />
+    </div><!--end div align-->
+    </form>
+    </div><!--end div sample-->
+    <style type="text/css">
+        #sample {border:1px solid #666;text-align:center;}
+        #sample h2 {text-align:center;}
+        #sample p {text-align:center;padding:.4em 3em;}
+        #my-form .data-entry {padding:.5em 8%;}
+        #my-form textarea {padding: 1em 8%;}
+        #my-form .button {width:80px;height:30px;font-size:110%;margin:.4em;}
+        #my-form #align {box-sizing:border-box;width:96%;text-align:center;margin:0 2%;padding:2em;}
+    </style>
+    
