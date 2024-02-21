@@ -1,8 +1,15 @@
-<form>
-  <fieldset>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Form</title>
+</head>
+<body>
+  <form>
     <ul>
       <li>
-        <label for="name">Name:*</label><br>
+        <label for="name">Name:</label><br>
         <input 
          type="text"
          id="name"
@@ -10,7 +17,7 @@
          required/>
       </li></br>
       <li>
-        <label for="emailAdress">Email*:</label><br>
+        <label for="emailAdress">Email:</label><br>
         <input
          type="email"
          id="emailAdress" 
@@ -22,35 +29,36 @@
          suffices in making a selection a requirement -->
 
       <li>
-        <label for="subscription">Subscription:</label>
-        <input type="radio" required name="monthly" id="r1" value="monthly" /><label
-        for="r1"
-        >Monthly</label><br>
-      <input type="radio" required name="yearly" id="r2" value="yearly" /><label
-        for="r2"
-        >Yearly</label><br>
+        <label for="subscription">Subscription:</label><br>
+        <input type="radio" name="subscription" id="monthly" value="monthly" required/>
+        <label for="monthly">Monthly</label><br>
+
+        <input type="radio"  name="subscription" id="yearly" value="yearly" required/>
+        <label for="yearly">Yearly</label> <br>
+
       </li><br>
       <button>Submit</button>
     </ul>
-  </fieldset>
-  <style>
-      form {
-        font: 1em sans-serif;
-         max-width: 500px;
-      }
+</body>
+</html>
+<style>
+  form {
+    font: 1em sans-serif;
+     max-width: 500px;
+  }
 
-      label {
-        display: block;
-      }
+  label {
+    display: block;
+  }
 
-      input[type="text"],
-      input[type="email"],
-      input[type="radio"],
-      textarea,
-      fieldset {
-        width: 100%;
-        border: 1px solid #333;
-        box-sizing: border-box;
-      }
-   </style>
-</form>
+  input[type="text"],
+  input[type="email"],
+  input[type="radio"],
+  textarea,
+  fieldset {
+    width: 100%;
+    border: 1px solid #333;
+    box-sizing: border-box;
+  }
+</style>
+

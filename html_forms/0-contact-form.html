@@ -1,90 +1,107 @@
-<form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <form action="/submit_contact_form" method="post">
     <ul>
       <li>
-        <label for="name">Name:*</label><br />
-        <input type="text" id="name" name="name" required/>
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required/><br>
       </li>
       <li>
-        <label for="email">Email:*</label><br />
-        <input type="email" id="email" name="email" required/>
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required/><br>
       </li>
       <li>
-        <label for="adress">Adress:* </label><br />
-        <input type="text" name="adress" id="adress">
+        <label for="adress">Adress:</label><br>
+        <input type="text" name="adress" id="adress"><br>
       </li>
       <li>
         <label for="msg">Message:</label><br />
-        <textarea id="msg" name="message"></textarea>
+        <textarea id="msg" name="message" rows="4" cols="50" required></textarea><br><br>
       </li>
       <button>Submit</button>
     </ul>
-</form>
+  </form>
+</body>
+</html>
 <style>
-    form {
-      /* Center the form on the page */
-     margin: 0 auto;
-     width: 400px;
-     /* Form outline */
-     padding: 1em;
-     border: 1px solid #ccc;
-     border-radius: 1em;
-    }
-
-    ul {
-     list-style: none;
-     padding: 0;
-     margin: 0;
-    }
-
-   form li + li {
-   margin-top: 1em;
-   }
-
-  label {
-    /* Uniform size & alignment */
-     display: inline-block;
-     width: 90px;
-     text-align: right;
-   }
-
-  input,
-  textarea {
-    /* To make sure that all text fields have the same font settings
-       By default, textareas have a monospace font */
-     font: 1em sans-serif;
-
-     /* Uniform text field size */
-     width: 300px;
-     box-sizing: border-box;
-
-     /* Match form field borders */
-      border: 1px solid #999;
+  body{
+    background-color:aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
-   input:focus,
-   textarea:focus {
-    /* Additional highlight for focused elements */
-     border-color: #000;
-   }
 
-   textarea {
-    /* Align multiline text fields with their labels */
-    vertical-align: top;
+  form {
+    /* Center the form on the page */
+   margin: 0 auto;
+   width: 400px;
+   /* Form outline */
+   padding: 1em;
+   border: 1px solid grey;
+   border-radius: 1em;
+  }
 
-     /* Provide space to type some text */
-    height: 5em;
-   }
+  ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+  }
 
-  .button {
-    /* Align buttons with the text fields */
-     padding-left: 90px; /* same size as the label elements */
-   }
+ form li + li {
+ margin-top: 1em;
+ }
 
-   button {
-     /* This extra margin represent roughly the same space as the space
-     between the labels and their text fields */
-     margin-left: 0.5em;
-   }
+label {
+  /* Uniform size & alignment */
+   display: inline-block;
+   width: 90px;
+   text-align: right;
+ }
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+   font: 1em sans-serif;
+
+   /* Uniform text field size */
+   width: 300px;
+   box-sizing: border-box;
+
+   /* Match form field borders */
+    border: 1px black;
+    background-color: gray;
+}
+
+ input:focus,
+ textarea:focus {
+  /* Additional highlight for focused elements */
+   border-color: #000;
+ }
+
+ textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+   /* Provide space to type some text */
+  height: 5em;
+ }
+
+.button {
+  /* Align buttons with the text fields */
+   padding-left: 90px; /* same size as the label elements */
+ }
+
+ button {
+   /* This extra margin represent roughly the same space as the space
+   between the labels and their text fields */
+   margin-left: 12em;
+ }
 </style>
 
-  
+
